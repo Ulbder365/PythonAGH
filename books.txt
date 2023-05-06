@@ -1,0 +1,2 @@
+1,Harry Potter i Kamien Filozoficzny,J.K. Rowling,Filozoficzny,False,False,False
+2,harry potter i komnata tajemnic,J. K,Komnata,False,False,False

@@ -1,0 +1,5 @@
+1,Reader,weakPass,Reader
+2,Librarian,strongPass,Librarian
+3,Reader1,weakPass,Reader3
+4,Tomek,123321,Reader
+5,Adrain,1233341,Reader
