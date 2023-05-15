@@ -28,5 +28,5 @@ class User:
         for book in self.catalog:
             if book.isbn == isbn:
                 return book
-        print('There is no book with given isbn number')
-        return False
+        print('There is no book with given isbn number')  # nie wypisywać tutaj
+        return None
