@@ -26,7 +26,8 @@ class LibraryGUI:
         username_field.pack()
         password_field = tk.Entry(root)
         password_field.pack()
-        button = tk.Button(text="Login to system", command=lambda: self.get_login_credentials(username_field, password_field))
+        button = tk.Button(text="Login to system",
+                           command=lambda: self.get_login_credentials(username_field, password_field))
         button.pack()
 
     def reader_view(self):
@@ -152,7 +153,8 @@ class LibraryGUI:
         keyword_field = tk.Entry(root)
         keyword_field.pack()
 
-        button_add_book = tk.Button(text="Add book", command=lambda: self.add_book(isbn_field, title_field, author_field, keyword_field))
+        button_add_book = tk.Button(text="Add book",
+                                    command=lambda: self.add_book(isbn_field, title_field, author_field, keyword_field))
         button_add_book.pack()
         self.menu_button()
 
@@ -174,7 +176,8 @@ class LibraryGUI:
         password_field = tk.Entry(root)
         password_field.pack()
 
-        button_add_reader = tk.Button(text="Add reader", command=lambda: self.add_reader(uuid_field, username_field, password_field))
+        button_add_reader = tk.Button(text="Add reader",
+                                      command=lambda: self.add_reader(uuid_field, username_field, password_field))
         button_add_reader.pack()
         self.menu_button()
 

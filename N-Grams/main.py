@@ -1,11 +1,13 @@
 import re
 from collections import Counter
 
+
 def prepare_text(filename):
-    with open(filename, 'r', encoding='utf-8') as file:
-        text = file.read().lower()
+    with open(filename, 'r', encoding='utf-8') as file:  # przesłonięcie symbolu wbudowanego
+        text = file.read().lower()  # zły pomysł; proszę to zrobić z Wikipedią
         text = re.sub('[^\w\sąćęłńóśźż]+', '', text, flags=re.UNICODE)
         return text.split()
+
 
 def count_words(filename, number):
     text = prepare_text(filename)

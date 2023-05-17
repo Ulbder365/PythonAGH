@@ -1,5 +1,6 @@
 from role.User import User
 
+
 class Librarian(User):
     def __init__(self, uuid, username, password, role, catalog, users):
         super().__init__(uuid, username, password, role, catalog)
